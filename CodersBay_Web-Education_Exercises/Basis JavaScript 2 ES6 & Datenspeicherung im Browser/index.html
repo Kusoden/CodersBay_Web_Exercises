@@ -1,0 +1,44 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz Web App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz Web App</h1>
+    </header>
+
+    <main>
+        <div class="panels">
+            <div class="panel">
+                <div class="questionNumber" id="questionNumber"></div>
+                <div class="question" id="ques">Please choose Question 1 to start!</div>
+                <div class="options" id="opt"></div>
+                <button onclick="checkAns()" id="btn">SUBMIT</button>
+                <div id="score"></div>
+                <div id="win"></div>
+                
+            </div>
+            <div id="buttons" class="panel2"> <!-- buttons will be created in js Questions.forEach -->
+  <!--               <button onclick="loadNextQuestion(1)" id="q1">Question 1</button>
+                <button onclick="loadNextQuestion(2)" id="q2">Question 2</button>
+                <button onclick="loadNextQuestion(3)" id="q3">Question 3</button>
+                <button onclick="loadNextQuestion(4)" id="q4">Question 4</button>
+                <button onclick="loadNextQuestion(5)" id="q5">Question 5</button>
+                <button onclick="loadNextQuestion(6)" id="q6">Question 6</button>
+                <button onclick="loadNextQuestion(7)" id="q7">Question 7</button>
+                <button onclick="loadNextQuestion(8)" id="q8">Question 8</button>
+                <button onclick="loadNextQuestion(9)" id="q9">Question 9</button> -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button class="reload" onclick="relPage()">Reload the game!</button>
+    </footer>
+    <script src="main.js"></script>
+</body>

@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+</head>
+
+<body>
+    <header>
+        <h1>Inoivce creator</h1>
+        <p>Thanks for choosing GoodCorp, LLC!</p>
+    </header>
+
+    <main>
+        <article>
+            <button id="wash-el" onclick="washCar()">Wash Car: $10</button>
+            <button id="mow-el" onclick="mowLawn()">Mow Lawn: $20</button>
+            <button id="pull-el" onclick="pullWeeds()">Pull Weeds: $30</button>
+            <div>
+                <p>TASK</p>
+                <p>TOTAL</p>
+            </div>
+            <div id="task-container"></div>
+            <hr>
+            <div>
+                <p>NOTES</p>
+                <p>TOTAL AMOUNT</p>
+            </div>
+            <div>
+                <p>We accept cash, credit card or PayPal</p>
+                <h2 id="totalAmount"></h2>
+            </div>
+            <Button onclick="resetbut()" id="reset" class="icon">Send invoice</Button>
+        </article>
+    </main>
+    <script src="main.js"></script>
+</body>

@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissor</h1>
+    </header>
+
+    <main>
+        <section class="game">
+            <div class="title"></div>
+            <div class="score">
+                <div class="playerScore">
+                    <h2>Player</h2>
+                    <h3 id="playerOutcome"></h3>
+                    <p class="p-count">0</p>
+                </div>
+
+                <div class="computerScore">
+                    <h2>Computer</h2>
+                    <h3 id="computerOutcome"></h3>
+                    <p class="c-count">0</p>
+                </div>
+
+            </div>
+
+            <hr class="rightStart">
+
+            <div id="movesLeft">Moves Left: "you have to first decide it"</div>
+            <button onclick="lapInput()">Laps you want to play</button>
+
+            <hr>
+
+            <div class="move">Choose your move</div>
+            <div class="options">
+                <button class="rock" onclick="butClicked('rock')">rock</button>
+                <button class="paper" onclick="butClicked('paper')">paper</button>
+                <button class="scissor" onclick="butClicked('scissors')">scissors</button>
+            </div>
+
+            <div class="result">result will be shown here!</div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <button class="reload" onclick="relPage()">Reload the game!</button>
+    </footer>
+
+    <script src="main.js"></script>
+</body>

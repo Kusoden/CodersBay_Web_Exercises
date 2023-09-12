@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    border: 2px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 2rem #00ffd5,
+        0 0 2rem #00ffd5,
+        0 0 3rem #00ffd5,
+        inset 0 0 2rem #00ffd5;
+        background:
+        conic-gradient(at 10% 50%,#0000 75%,#0064ba 0),
+        conic-gradient(at 10% 50%,#0000 75%,#0064ba 0) calc(1*16px) calc(3*16px),
+        conic-gradient(at 10% 50%,#0000 75%,#0064ba 0) calc(2*16px) calc(1*16px),
+        conic-gradient(at 10% 50%,#0000 75%,#0064ba 0) calc(3*16px) calc(4*16px),
+        conic-gradient(at 10% 50%,#0000 75%,#0064ba 0) calc(4*16px) calc(2*16px),
+        conic-gradient(at 50% 10%,#0000 75%,#0064ba 0) 0 calc(4*16px),
+        conic-gradient(at 50% 10%,#0000 75%,#0064ba 0) calc(1*16px) calc(2*16px),
+        conic-gradient(at 50% 10%,#0000 75%,#0064ba 0) calc(2*16px) 0,
+        conic-gradient(at 50% 10%,#0000 75%,#0064ba 0) calc(3*16px) calc(3*16px),
+        conic-gradient(at 50% 10%,#0000 75%,#0064ba 0) calc(4*16px) calc(1*16px),
+        #000000;
+  background-size: 80px 80px;
+  
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Inter';
+    display: grid;
+    grid-template-rows: 15% 1fr;
+}
+
+
+
+header {
+    border: 1px;
+    border-style: solid;
+    border-color: #0064ba;
+    background-color: #003767f6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    box-shadow: 0px 0px 70px #0064ba;
+}
+
+main {
+    margin: 5px;
+    display: grid;
+}
+
+.panels {
+    display: grid;
+    grid-template-columns: repeat(50px 1fr 50px);
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.panel{
+    display: grid;
+    margin-top: 5%;
+    background-color: rgba(165, 42, 42, 0.773);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: large;
+}
+
+.panel2{
+    display: grid; /* this is for the questions inside does not affect the one in the bottom grid-column and grid-row */
+    margin-top: 5%;
+    background-color: rgba(220, 220, 220, 0.773);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+button {
+    cursor: pointer;
+    background-color: #003767f6;
+    color: #b9ecf2;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 70px #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    height: 250px;
+}
+
+@media screen and (min-width:1400px){
+    .panels {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    
+    
+    .panel2{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+reset{
+    grid-template-columns: 1/3;
+
+}

@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Belanosima);
+
+/* mobile first 576px width */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    font-family:belanosima;
+    background-color: rgb(193, 137, 95);
+    color: white;
+}
+
+header nav ul{
+    padding: 25px;
+}
+header li a{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+
+body{
+    padding: 2%;
+}
+
+section{
+    padding:  5px;
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    display: block;
+    line-height: 1;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: circle;
+}
+
+li a{ 
+    color: rgb(0, 0, 82);
+    font-size: x-large;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #64beda;
+    border-radius: 5px;
+}
+
+main{
+    padding: 1%;
+    justify-content: center;
+    outline-offset: 12px;
+    outline: 5px dashed rgb(0, 0, 138);
+    outline-style: dotted;
+    box-shadow: 10px 10px 10px #64beda inset;
+    border: 12px dotted rgb(0, 0, 138);
+    margin: 20px;
+    background-color: rgb(140, 140, 140);
+}
+
+#shahs{
+    background-color: rgb(140, 140, 140);
+}
+
+img{
+    width: 30%;
+    max-width: 100%;
+}
+#shahs img{
+    border-radius: 800px;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer a{
+    color: rgb(0, 0, 95);
+
+    font-size: x-large;
+}
+
+footer a:hover{
+    background-color: #cd5632;
+    border-radius: 5px;
+}
+
+cite{
+    color: blue;
+}
+span{
+    color: blue;
+    font-weight: bolder;
+}
+
+.fr{
+    width: 100%;
+    max-width: 50%;
+}
+
+iframe{
+    width:460px;
+    height:215px; 
+}
+
+video{
+    width: 460px;
+}
+
+/* desktop format 1400px */
+
+@media screen and (min-width:1400px){
+
+
+    #shahs img{
+        width: 30%;
+        border-radius: 800px;
+    }
+    
+    img{
+        padding: 2%;
+        height: auto;
+        max-width: 30%;
+        width: 100%;
+    }
+    
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        width: 100%;
+    }
+
+    iframe{
+        width:560px;
+        height:315px; 
+    }
+    
+    video{
+        width: 560px;
+    }
+    
+
+}

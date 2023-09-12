@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    border: 2px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 2rem #00ffd5,
+        0 0 2rem #00ffd5,
+        0 0 3rem #00ffd5,
+        inset 0 0 2rem #00ffd5;
+    background-color: #19282F;
+    margin: 0;
+    color: #D3ECA7;
+    font-family: 'Inter';
+    display: grid;
+    grid-template-rows: 15% 1fr;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    border: 1px;
+    border-style: solid;
+    border-color: #A1B57D;
+    background-color: #B33030;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    box-shadow: 0px 0px 70px #A1B57D;
+}
+
+h2 {
+    color: #FF0000;
+}
+
+main {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+
+hr {
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    animation: mymove 15s infinite;
+    border: 2px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #00ffd5,
+        0 0 0.8rem #00ffd5,
+        0 0 2.8rem #00ffd5,
+        inset 0 0 1.3rem #00ffd5;
+}
+
+.rightStart {
+    left: unset;
+    right: 0px;
+}
+
+@keyframes mymove {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.move {
+    margin-top: 15px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bolder;
+    color: aqua;
+    padding: 15px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem aqua,
+        0 0 0.8rem aqua,
+        0 0 2.8rem aqua,
+        inset 0 0 1.3rem aqua;
+}
+
+button {
+    cursor: pointer;
+    background-color: #D3ECA7;
+    color: #B33030;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #A1B57D;
+    color: #D3ECA7;
+    box-shadow: 0px 0px 70px snow;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    height: 250px;
+}

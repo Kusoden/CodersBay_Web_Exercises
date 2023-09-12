@@ -1,0 +1,89 @@
+body{
+    border: 1px;
+    border-style: solid;
+    border-color: #7DD3FC;
+    background-color: #520D22;
+    margin: 0;
+    color: white;
+    font-family: 'Inter';
+    display: grid;
+    grid-template-rows: 15% 1fr;
+}
+
+header{
+    border: 1px;
+    border-style: solid;
+    border-color: #7DD3FC;
+    background-color: #9F1239;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 70px #7DD3FC;
+}
+
+main{
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+
+div{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #FFE4E6;
+    color: #4A4E74 ;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+}
+
+button:hover{
+    background-color: #0EA5E9;
+    color: #FFE4E6;
+}
+
+#task-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#task-container button{
+    color: #7DD3FC;
+    background-color: #520D22;
+}
+
+#task-container button:hover{
+    color: #FFE4E6;
+    background-color: #0EA5E9;
+}
+
+.rem{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#reset{
+    width: 95%;
+    height: 60px;
+    color: white;
+    background-color: #9F1239;
+    font-size: 20px;
+}
+#reset:hover{
+    color: #FFE4E6;
+    background-color: #0C4A6E;
+}
+
+.icon::before{
+    content: 'email';
+    font-family: 'Material Icons'; 
+    font-size: 24px; 
+    color: #fafafa;
+    margin-right: 5px;
+}
